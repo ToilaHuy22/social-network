@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,700&display=swap');
+:root {
+    --main-color: #91087a;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.container {
+    font-family: 'Nunito';
+    min-height: 100vh;
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.container h1 {
+    color: var(--main-color);
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+    border-radius: 30px;
+    font-size: 6em;
+    padding: .5em .8em;
+}
+
+.color-switcher {
+    position: absolute;
+    position: fixed;
+    top: 25px;
+    right: 0px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.color-switcher .active {
+    right: 0px;
+}
+
+.color-switcher h3 {
+    display: block;
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.color-switcher .switcher-btn {
+    position: absolute;
+    top: 0;
+    left: -75px;
+    color: var(--main-color);
+    background: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.color-switcher .switcher-btn i {
+    animation: rotate 2s linear infinite;
+}
+
+
+/* @keyframes rorate {
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+.color-switcher .theme-button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-switcher .theme-button-container .theme-buttons {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 200%;
+    margin: 5px;
+    cursor: pointer;
+    border-color: cadetblue;
+}
+
+.icon {
+    height: 18px;
+    width: 18px;
+}
